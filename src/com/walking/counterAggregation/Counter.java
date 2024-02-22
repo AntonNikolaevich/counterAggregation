@@ -9,9 +9,10 @@ public class Counter {
         this.name = name;
         this.measure = measure;
         counter = 0;
+
     }
 
-    protected Counter(String name, String measure, int counter) {
+    public Counter(String name, String measure, int counter) {
         this.name = name;
         this.counter = counter;
         this.measure = measure;
@@ -23,6 +24,10 @@ public class Counter {
 
     public int getCounter() {
         return counter;
+    }
+
+    public void setCounter(int counter) {
+        this.counter = counter;
     }
 
     public String getMeasure() {
